@@ -2,7 +2,7 @@
 
 This is a simple and convenient console calculator created by A. Fonov in the C programming language.
 
-With its help you can perform such mathematical calculations as: plus, minus, divide, multiply, raise to a power.
+With its help you can perform such mathematical calculations as: plus, minus, divide, multiply, raise to a power, and others.
 
 Thank you for using FonovCalcul!
 
