@@ -1,0 +1,128 @@
+// FonovCalcul source code version 1.2
+
+// Licensed under the MIT License
+
+// More details in 'README.md'
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <math.h>
+
+int main()
+{
+	int i;
+	double aa,bb,cc,dd;
+	char vb;
+	system("cls");
+	printf("\nFonovCalcul v1.2");
+	printf("\n\nMore details in 'README.md'");
+	printf("\n\nCopyright (c) 2025 A. Fonov");
+	do
+	{
+		printf("\n\nNumber 1-");
+		scanf("%lf",&aa);
+		printf("\n\nNumber 2-");
+		scanf("%lf",&bb);
+		printf("\n\nWhen working with trigonometry functions, enter data in radians!");
+		printf("\n\nFor operations starting with 'e' (and further, except atan2('t' -> 'k')), the entered value = number 1 + number 2.");
+		printf("\n\n 'h' - hypotenuse");
+		printf("\n\n+ | - | / | * | ^ | v | %% | h | l | e | ! | s | c | t ?");
+		vb = getch();
+		if (vb == '+')
+		{
+			cc = aa + bb;
+		}
+		if (vb == '-')
+		{
+			cc = aa - bb;
+		}
+		if (vb == '/')
+		{
+			cc = aa / bb;
+		}
+		if (vb == '*')
+		{
+			cc = aa * bb;
+		}
+		if (vb == '^')
+		{
+			cc = pow(aa,bb);
+		}
+		if (vb == 'v')
+		{
+			cc = pow(aa, 1.0 / bb);
+		}
+		if (vb == '%')
+		{
+			cc = aa * bb / 100;
+		}
+		if (vb == 'h')
+		{
+			cc = hypot(aa,bb);
+		}
+		if (vb == 'e')
+		{
+			cc = exp(aa+bb);
+		}
+		if (vb == 'l')
+		{
+			cc = log(aa) / log(bb);
+		}
+		if (vb == '!')
+		{
+			dd = aa + bb;
+			cc = 1;
+			for (i = 1; i <= dd; i++)
+			{
+				cc *= i;
+			}
+		}
+		if (vb == 's')
+		{
+			printf("\n\n s | a ?");
+			vb = getch();
+			if (vb == 's')
+			{
+				cc = sin(aa+bb);
+			}
+			if (vb == 'a')
+			{
+				cc = asin(aa+bb);
+			}
+		}
+		if (vb == 'c')
+		{
+			printf("\n\n c | a ?");
+			vb = getch();
+			if (vb == 'c')
+			{
+				cc = cos(aa+bb);
+			}
+			if (vb == 'a')
+			{
+				cc = acos(aa+bb);
+			}
+		}
+		if (vb == 't')
+		{
+			printf("\n\n t | a | k ?");
+			vb = getch();
+			if (vb == 't')
+			{
+				cc = tan(aa+bb);
+			}
+			if (vb == 'a')
+			{
+				cc = atan(aa+bb);
+			}
+			if (vb == 'k')
+			{
+				cc = atan2(aa,bb);
+			}
+		}
+		printf("\n\nResult- %lf",cc);
+	}
+	while (vb != 'x');
+	return 0;
+}
