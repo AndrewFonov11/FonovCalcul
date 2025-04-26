@@ -4,6 +4,8 @@ This is a simple and convenient console calculator created by A. Fonov in the C 
 
 With its help you can perform such mathematical calculations as: plus, minus, divide, multiply, raise to a power, and others.
 
+Many new features have been added in new versions.
+
 Thank you for using FonovCalcul!
 
 ## License
